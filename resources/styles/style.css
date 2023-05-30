@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  --primary: #072ac8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------ INDEX html ------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------------ Splash page ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------ CIRCULAR ANIMATION ------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Navbar ------------------------------ */
+.NavBar {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 8rem;
+  top: 0
+
+}
+
+.NavBar ul > li > a {
+  text-decoration: none;
+  color: #6c718b;
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin: 0 14px 0 14px;
+  }
+
+.NavBar img {
+  width: 5,5%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.NavBar ul {
+display: flex;
+list-style: none;
+color: black;
+gap: 1rem;
+}
+
+.NavBar button {
+background-color: #072ac8;
+color: white;
+border: 0;
+border-radius: 0;
+font-weight: bold;
+font-size: 1.05rem;
+padding: 16px;
+}
+
+.NavBar button:hover {
+  background-color: gray;
+}
+/* Your CSS code goes here */
+header {
+  top: 4rem;
+}
+/* ------------------------------ Header ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Partners ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Recent projects ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Client reviews ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Services ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Questions form ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Footer ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ PROJECT html ------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Project main ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------ CONTACT-US html ------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* ------------------------------ Form ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------ About html ------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* Your CSS code goes here */
+
+/* --------------------------------------------------------------------------- */
+/* ------------------------------ MEDIA QUERIES ------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+/* ------------------------- Smaller than 990px (tablet) ------------------------- */
+@media (max-width: 990px) {
+  /* Your CSS code goes here */
+}
+
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+  /* Your CSS code goes here */
+}
+
+/* ------------------------------ Hamburguer menu ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Alert ------------------------------ */
+
+/* Your CSS code goes here */
+
+/* ------------------------------ Sticky scroll bar ------------------------------ */
+
+/* Your CSS code goes here */
