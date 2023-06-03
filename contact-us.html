@@ -5,62 +5,79 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Circle Agency</title>
+  <title>Contact-us Armando</title>
   <link rel="stylesheet" href="resources/styles/style.css" />
 </head>
 
 <body>
-    <!-- Section Nav-Bar -->
-    <nav>
-        <img class="logoTop" src="./resources/images/logos/circle.svg" alt="circle-logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="about">About</a></li>
-          </ul>
-        <a href="contact-us.html"><button>Contact us</button></a>
-    </nav>
+  <!-- Section Nav-Bar -->
+  <nav class="navbar">
+    <img class="logotop" src="./resources/images/logos/circle.svg" alt="circle-logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="about">About</a></li>
+    </ul>
+    <a href="contact-us.html"><button class="contact-button">Contact us</button></a>
+  </nav>
 
-    <body>
-        
-            <!-- section n1 Form -->
+
+  <body>
+    <main>
+      <section class="contact-us">
+        <!-- section n1 Form -->
         <h1>Contact Us</h1>
-        <h2>Our favourite songs!</h2>
-        <div>
-          <form id="myForm">
-            <label for="formName">Full name:</label><br />
-            <input type="text" id="formName" name="formName" placeholder="Enter your full name" /><br />
-    
-            <label for="email">Enter your email:</label><br />
-            <input type="email" id="email" name="email" placeholder="Enter your email" /><br />
-    
-            <label for="phone">Enter your phone number:</label><br />
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Enter your phone" /><br />
-    
-            <label for="msg">Message:</label><br />
-            <textarea id="msg" name="message" rows="10" cols="30" placeholder="Write your message here..."></textarea><br />
-            <p id="errorBox"></p>
-            <button type="submit">Submit</button>
-           Click Me!
-         </button>
+
+        <div id="form-container">
+          <form id="form-msg" action>
+          <div id="name">
+            <label for="formName">Full name *</label><br />
+            <input type="text" id="formName" name="formName" placeholder="Enter your full name" />
+          </div>
+          
+          <div class="email-phone">
+            <div class="email-form">
+              <label for="email">Email</label>
+              <input type="email" id="email-us" name="email" placeholder="Enter your email" />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                placeholder="Enter your phone" />
+            </div>
+          </div>
+
+          <div class="message">
+          <label for="msg">Message *</label><br />
+          <textarea id="msg" name="message" rows="10" cols="30"
+            placeholder="Write your message here..."></textarea><br />
+          <p id="errorBox"></p>
+          <button class="submit" type="submit">Submit</button>
         </div>
-        <!-- section n2 footer -->
-        <footer>
-          <object
-            data="./resources/images/logos/circle.svg"
-            type="image/svg+xml"
-          ></object>
-          <p>Barcelona. Spain, 08029</p>
-          <ul>
-            <li><a href=""></a>Team</li>
-            <li><a href=""></a>Services</li>
-            <li><a href=""></a>About Us</li>
-            <li><a href=""></a>Press</li>
-            <li><a href=""></a>Proyects</li>
-            <li><a href=""></a>Privacy policy</li>
-          </ul>
-        </footer>
-      </body>
-      <script src="./resources/js/contact.js"></script>
-    </html>
+        </form>
+        </div>
+    </main>
+    <!-- section n2 footer -->
+    <footer>
+      <div class="logo">
+        <div class="img-bottom">
+          <img class="logoFoot" src="./resources/images/logos/circle.svg" alt="circle-logo">
+        </div>
+        <div class="address">
+          <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+        </div>
+      </div>
+      <div class="link-footer">
+        <a href="team">Team</a>
+        <a href="services">Services</a>
+        <a href="aboutUs">About us</a>
+        <a href="press">Press</a>
+        <a href="projects">Projects</a>
+        <a href="privacyPolicy">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+  <script src="./resources/js/contact.js"></script>
+
+</html>

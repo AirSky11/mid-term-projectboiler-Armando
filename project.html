@@ -5,74 +5,87 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Page-Simple</title>
+  <title>Project Armando</title>
   <link rel="stylesheet" href="resources/styles/style.css" />
 </head>
 
 <body>
-<main>
-<!-- Section Nav-Bar -->
-<nav>
-    <img class="logoTop" src="./resources/images/logos/circle.svg" alt="circle-logo">
+
+  <!-- Section Nav-Bar -->
+  <nav class="navbar">
+    <img class="logotop" src="./resources/images/logos/circle.svg" alt="circle-logo">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects">Projects</a></li>
-        <li><a href="project.html">Project Page - Simple</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="about">About</a></li>
-      </ul>
-    <a href="contact-us.html"><button>Contact us</button></a>
-</nav>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="about">About</a></li>
+    </ul>
+    <a href="contact-us.html"><button class="contact-button">Contact us</button></a>
+  </nav>
+  <main>
 
-    <header>
-<h1>Simplifyy</h1>
-    </header>
-
-<section>
-    <h3>UI Design & App Development</h3>
-    <p>Completed on 2/2/22</p>
-    <img src="./resources/images/projects-section/4.jpg" alt="project">
-    <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.
-
-        Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
-</section>
-
-<section>
-    <h3>Other Projects</h3>
-      <div class="projectClass">
-        <div id="projectContainer"></div>
+    <section class="principal-project">
+      <div class="title">
+        <h1>Simplifyy</h1>
       </div>
-</section>
+      <div class="subtitle">
+        <h3>UI Design & App Development</h3>
+        <p>Completed on 2/2/22</p>
+      </div>
+      <div class="img-project">
+        <img src="./resources/images/projects-section/4.jpg" alt="project">
+      </div>
+      <div class="text-project">
+        <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate
+          justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros
+          pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla
+          ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue
+          lacus. <br>Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id
+          dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque
+          nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet
+          tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices.
+          Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim
+          pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
+      </div>
+    </section>
 
-<section class="question">
-    <h3>Do you have any questions?</h3>
-    <p>Let us help you!</p>
-    <form action="email" mathod="post">
-      <label for="email"></label>
-      <input type="email" id="email" placeholder="Enter your email">
-      <button>Subscribe</button>
-    </form>
-  </section>
+    <section class="recent-projects">
+      <h2>Other Projects</h2>
+      <div class="projectClass">
+        <div id="projectcontainer"></div>
+      </div>
+    </section>
+
+    <section class="question">
+      <h3>Do you have any questions?</h3>
+      <p>Let us help you!</p>
+      <div class="email-panel">
+        <input type="email" id="email" placeholder="Enter your email">
+        <button class="btn-subscribe">Subscribe</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <img class="logoFoot" src="./resources/images/logos/circle.svg" alt="circle-logo">
-    <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</address>
-    <div>
-      <table>
-        <tr>
-          <td><a href="team">Team</a></td>
-          <td><a href="services">Services</a></td>
-          <td><a href="aboutUs">About us</a></td>
-        </tr>
-        <tr>
-          <td><a href="press">Press</a></td>
-          <td><a href="projects">Projects</a></td>
-          <td><a href="privacyPolicy">Privacy Policy</a></td>
-        </tr>
-      </table>
+    <div class="logo">
+      <div class="img-bottom">
+        <img class="logoFoot" src="./resources/images/logos/circle.svg" alt="circle-logo">
+      </div>
+      <div class="address">
+        <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+      </div>
+    </div>
+    <div class="link-footer">
+      <a href="team">Team</a>
+      <a href="services">Services</a>
+      <a href="aboutUs">About us</a>
+      <a href="press">Press</a>
+      <a href="projects">Projects</a>
+      <a href="privacyPolicy">Privacy Policy</a>
     </div>
   </footer>
-</main>    
+
 </body>
 <script src="./resources/js/project.js"></script>
+
 </html>
