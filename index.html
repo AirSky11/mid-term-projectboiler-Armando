@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Circle Agency Armando</title>
+    <title>Circle Agency JesusGil</title>
     <link rel="stylesheet" href="./resources/styles/style.css" />
   </head>
   <body>
+    <!-- loader -->
+    <div id="load-container">
+      <div id="loader"></div>
+    </div>
     <!-- section n0 nav-var y button de contac us -->
     <nav class="nav-bar">
       <div>
@@ -22,12 +26,12 @@
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">About</a></li>
       </ul>
-      <a href="contact-us.html"
+      <a href="./contact-us.html"
         ><button class="contact-button">Contact us</button></a
       >
     </nav>
@@ -42,10 +46,12 @@
             websites and mobile apps.
           </p>
           <div id="button-get-container">
-            <a id="see-our-work" href="#"><span>See our work</span></a>
-            <button class="button-get-in-touch" type="button">
-              Get in touch
-            </button>
+            <a id="see-our-work" href="#projects"><span>See our work</span></a>
+            <a href="./contact-us.html">
+              <button class="button-get-in-touch" type="button">
+                Get in touch
+              </button></a
+            >
           </div>
         </div>
         <div class="block-one">
@@ -206,7 +212,11 @@
             name="email"
             placeholder="Enter your email"
           />
-          <button id="button-subscribe" type="submit">Subcribe</button>
+          <a href="#subscribe">
+            <button id="button-subscribe" type="button">Subscribe</button>
+          </a>
+          <!-- success message -->
+          <div id="success-msg"></div>
         </form>
       </section>
     </main>
@@ -234,5 +244,7 @@
       </div>
     </footer>
     <script src="resources/js/index.js"></script>
+    <script src="resources/js/loader.js"></script>
+    <script src="resources/js/subscribe.js"></script>
   </body>
 </html>

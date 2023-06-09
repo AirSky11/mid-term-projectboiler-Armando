@@ -7,12 +7,14 @@
   --primary: #d1edff;
   --primary: #6b708d;
   --primary: #292e47;
+  --primary: #ffc600;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 section,
 footer {
@@ -42,22 +44,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    /* text-align: center; */
     max-width: 1063px;
     margin: auto;
   }
 }
-/* main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  text-align: center;
-  max-width: 1063px;
-  margin: auto;
-} */
-
 .title-h2 {
   margin: 100px 0 75px 0;
   font-size: 2.5rem;
@@ -77,7 +67,48 @@ body {
 
 /* ------ CIRCULAR ANIMATION ------ */
 
-/* Your CSS code goes here */
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#load-container {
+  background-color: rgba(244, 246, 252, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#loader {
+  border: 3px solid rgba(244, 246, 252, 0);
+  border-top-color: #ffc600;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s linear infinite;
+  -o-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* ------------------------------ Navbar ------------------------------ */
 .nav-bar {
@@ -87,6 +118,7 @@ body {
   align-items: center;
   margin: 75px auto;
 }
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -119,6 +151,11 @@ body {
   font-weight: bold;
   font-size: 1.05rem;
   padding: 16px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #292e47;
 }
 
 .menu-button-container {
@@ -181,11 +218,13 @@ body {
   margin-right: auto;
   height: 40%;
   padding: 2px;
-}
+} 
+
 .text-head h1 {
   font-size: 4rem;
   text-align: left;
 }
+
 .text-head p {
   font-size: 1.3rem;
   color: #6b708d;
@@ -194,6 +233,7 @@ body {
   line-height: 150%;
   margin: 30px 0 50px 0;
 }
+
 #button-get-container {
   width: 100%;
   display: flex;
@@ -203,6 +243,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #see-our-work {
   text-decoration: none;
   color: #6c718b;
@@ -210,6 +251,11 @@ body {
   font-size: 1.05rem;
   margin: 0 14px 0 14px;
 }
+
+#see-our-work:hover {
+  color: #072ac8;
+}
+
 .button-get-in-touch {
   text-decoration: none;
   background-color: #072ac8;
@@ -219,6 +265,11 @@ body {
   font-weight: bold;
   font-size: 1.05rem;
   padding: 16px;
+  cursor: pointer;
+}
+
+.button-get-in-touch:hover {
+  background-color: #292e47;
 }
 
 .block-one {
@@ -249,14 +300,6 @@ body {
 }
 
 /* ------------------------------ Partners ------------------------------ */
-/* #partner-img {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-} */
 
 #partner-img {
   display: flex;
@@ -266,27 +309,40 @@ body {
   margin-top: 100px;
   margin-bottom: 40px;
 }
+
 .marcas {
   width: 12%;
   height: auto;
 }
+
 @media (max-width: 600px) {
   #adidas > * {
     display: none;
   }
 }
+
 .partner-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .partner-container img {
   margin-right: 30px;
 }
+
+.partner-container img:hover {
+  filter: grayscale(100%);
+}
+
 .partner-container img:last-child {
   margin-right: 0;
 }
+
+
 /* ------------------------------ Recent projects ------------------------------ */
+
+
 #projects {
   display: grid;
   justify-content: space-around;
@@ -295,6 +351,7 @@ body {
 #projects > h2 {
   margin: 100px 0 75px 0;
 }
+
 #cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -304,28 +361,37 @@ body {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+
 .cards {
   background-color: white;
   padding-bottom: 20px;
 }
+
 .cards img {
   width: 100%;
   height: 240px;
 }
+
 .cards h3 {
   font-size: 1.3rem;
   margin: 27px;
 }
+
 .cards p {
   font-size: 1.1rem;
   margin: 0 27px 27px 27px;
 }
+
 .cards a {
   text-decoration: none;
   font-weight: 500;
   color: #072ac8;
   margin: 0 27px 27px 27px;
   cursor: pointer;
+}
+
+.cards a:hover {
+  color: #282e4b;
 }
 
 /* ------------------------------ Client reviews ------------------------------ */
@@ -336,33 +402,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
-  margin-top: 150px;
+  margin: 150px 0px 0px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
-
-  /* background-color: #292e47;
-  background-image: url("../images/testimonial-section/orbit.png");
-  height: 500px;
-  margin-top: 150px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 1215px;
-  align-items: center;
-  position: relative;
-  margin-top: rem; */
 }
+
 .profile-testimonial {
   display: flex;
   justify-content: center;
   width: 55%;
 }
+
 .profile-testimonial img {
   width: 3.1rem;
   height: 3.1rem;
@@ -380,6 +434,7 @@ body {
   color: gold;
   font-size: 1.7rem;
 }
+
 .profile-testimonial {
   width: 17%;
   display: flex;
@@ -393,11 +448,13 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
 .profile-testimonial h5 {
   color: white;
   font-weight: 400;
   margin: 0;
 }
+
 .emoji-girl {
   width: 150px;
   height: 150px;
@@ -437,7 +494,11 @@ body {
   left: auto;
   top: auto;
 }
+
+
 /* ------------------------------ Services ------------------------------ */
+
+
 #services {
   display: grid;
   justify-content: space-around;
@@ -461,10 +522,12 @@ body {
   justify-items: center;
   margin: 0 auto;
 }
+
 .services-card {
   background-color: white;
   padding-bottom: 20px;
 }
+
 #services-card1 {
   background-image: url("../images/services-section/icons/1.svg");
   background-size: 46%;
@@ -476,6 +539,7 @@ body {
   border-radius: 100px;
   margin: 34px 0 0 34px;
 }
+
 #services-card2 {
   background-image: url("../images/services-section/icons/2.svg");
   background-size: 46%;
@@ -487,6 +551,7 @@ body {
   border-radius: 100px;
   margin: 34px 0 0 34px;
 }
+
 #services-card3 {
   background-image: url("../images/services-section/icons/3.svg");
   background-size: 46%;
@@ -515,31 +580,36 @@ body {
   margin: 0 27px 27px 27px;
 }
 
-.service-class a:hover {
+.services-card a:hover {
   font-weight: bold;
   color: #282e4b;
 }
+
 /* ------------------------------ Questions form ------------------------------ */
+
+
 #subscribe {
   height: 400px;
   background-color: #ffc600;
-  margin-top: 150px;
-  /* min-width: 1215px; */
+  margin: 150px 0px 0px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #subscribe h2 {
   text-align: center;
   font-size: 1.9rem;
 }
+
 #subscribe p {
   text-align: center;
   color: #61667f;
   margin: 1.2rem 0 3rem 0;
 }
+
 input {
   border: 0;
   background-color: rgba(107, 112, 141, 0.1);
@@ -549,6 +619,7 @@ input {
   padding-left: 15px;
   margin-bottom: 24px;
 }
+
 #input-email {
   border: 0;
   height: 70px;
@@ -570,9 +641,17 @@ input {
   text-decoration: none;
   margin-left: 12px;
   border: none;
+  cursor: pointer;
 }
 
+#button-subscribe:hover {
+  background-color: #292e47;
+}
+
+
 /* ------------------------------ Footer ------------------------------ */
+
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -606,44 +685,48 @@ footer {
   font-weight: bold;
   color: #6b708d;
 }
+
+
 /* --------------------------------------------------------------------------
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
 
 /* ------------------------------ Project main ------------------------------ */
 
-.title {
+#current-project h2 {
   font-size: 3rem;
   color: #292e47;
   text-align: left;
+  margin: 30px 0 50px 0;
 }
 
-.subtitle {
+#current-project h3 {
   display: flex;
   justify-content: space-between;
 }
 
-.subtitle h3,
-.subtitle p {
+#current-project h3 {
   color: #6c718b;
+  font-size: 1.5rem;
   font-weight: 450;
   margin: 30px 0 50px 0;
 }
 
-.img-project img {
+#current-project img {
   object-fit: cover;
   width: 100%;
   height: 444px;
   margin-bottom: 70px;
 }
 
-.text-project {
+#current-project {
   text-align: left;
 }
 
-.text-project p {
+#current-project p {
   font-size: 1, 2rem;
   line-height: 23px;
+  color: #6c718b;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -657,9 +740,6 @@ footer {
 .title h1 {
   color: #292e47;
   font-size: 3rem;
-}
-
-#form-container {
 }
 
 #form-container form {
@@ -683,7 +763,18 @@ footer {
   font-size: 1.1rem;
   padding-left: 15px;
   margin-bottom: 24px;
-  width: 500px;
+  width: 100%;
+}
+
+.contact-us h1 {
+  font-size: 4rem;
+  color: #292e47;
+  padding-bottom: 70px;
+}
+
+.email-phone {
+  display: flex;
+  gap: 10px;
 }
 
 .email-phone div {
@@ -692,13 +783,14 @@ footer {
   flex-direction: column;
 }
 
-.message #msg {
+#msg {
   border: 0;
   background-color: rgba(107, 112, 141, 0.1);
   height: 200px;
+  width: 100%;
   font-weight: 400;
   font-size: 1.1rem;
-  padding-top: 7px;
+  padding-top: 0px;
   padding-left: 15px;
   margin-bottom: 24px;
 }
@@ -711,7 +803,14 @@ footer {
   padding: 25px;
   text-decoration: none;
   border: none;
+  width: 100%;
+  cursor: pointer;
 }
+
+.submit:hover {
+  background-color: #6c718b;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
@@ -724,6 +823,7 @@ footer {
 /* --------------------------------------------------------------------------- */
 
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
+
 
 @media (min-width: 1216px) {
   #subscribe {
@@ -745,12 +845,13 @@ footer {
 
 @media (max-width: 990px) {
   .nav-bar {
-    margin: 0 auto 50px auto;
     padding: 0 30px 15px 30px;
+    margin: 0 auto 80px auto;
+    gap: 250px;
     height: 80px;
     width: 80%;
   }
-  .nav-bar a:last-child {
+  .contact-button:last-child {
     display: none;
   }
 }
@@ -758,8 +859,9 @@ footer {
 @media (max-width: 766px) {
   /* PART1 header content incluide h1/slongan text / principal img & buttons */
 
-  .contact-button {
-    display: none;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header-container {
@@ -768,36 +870,33 @@ footer {
     align-items: center;
     margin-top: 80px;
   }
+
   .text-head {
     width: 100%;
     text-align: center;
   }
+
   .text-head h1 {
     text-align: center;
     font-size: 2.6rem;
     color: #292e47;
   }
+
   .text-head p {
     text-align: center;
   }
-  /* .slogan-container {
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 2rem;
-    color: #6b708d;
-    margin-left: 2rem;
-    margin-right: 1rem;
-    line-height: 1.9rem;
-  } */
+
   #button-get-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
   }
+
   #button-get-container {
     flex-direction: row-reverse;
   }
+
   .button-get-in-touch {
     background-color: #072ac8;
     color: white;
@@ -808,6 +907,7 @@ footer {
     border: none;
     cursor: pointer;
   }
+
   .button-get-in-touch:hover {
     background-color: #292e47;
   }
@@ -818,27 +918,37 @@ footer {
     text-decoration: none;
   }
 
+  #see-our-work:hover {
+    color: #072ac8;
+  }
+
   .block-one {
     width: 100%;
     text-align: center;
     margin-top: 76px;
   }
+
   #principal-img {
     width: 70%;
     text-align: center;
   }
+
   #card-image {
     display: none;
   }
+
   #img-thumb {
     display: none;
   }
 
+
   /* PART2 partners img */ /* ----------------------------------------------------------------------------- */
+
 
   #adidas {
     display: none;
   }
+
   .partner-container {
     display: flex;
     flex-wrap: wrap;
@@ -848,12 +958,15 @@ footer {
     margin-right: 2rem;
   }
 
+
   #partner-img img {
     width: 24%;
     max-width: 150px;
     margin: 1rem;
     padding: 18px 0px 18px 0px;
   }
+
+
   /* PART3 projects cards */ /* ----------------------------------------------------------------------------- */
 
   #projects h2 {
@@ -869,37 +982,50 @@ footer {
     margin: 0 50px 0 50px;
     gap: 50px;
   }
+
   .cards {
     padding-bottom: 1.2rem;
     background-color: white;
     max-width: 80%;
   }
+
   .cards img {
     width: 100%;
     height: 240px;
     margin: 0;
   }
+
   .cards h3 {
     font-weight: 1.3rem;
     margin: 1.7rem;
   }
+
   .cards p {
     font-size: 1.1rem;
     font-weight: 300;
     margin: 0 27px 27px 27px;
   }
+
   .cards a {
     text-decoration: none;
     font-weight: 500;
     color: #072ac8;
   }
 
+  .cards a:hover {
+    color: #292e47;
+  }
+
+  
   /* PART4 testimonials */ /* ----------------------------------------------------------------------------- */
+
+
 
   #testimonials {
     justify-content: center;
     height: 370px;
   }
+
   #title-testimonials {
     color: white;
     font-size: 2rem;
@@ -907,6 +1033,7 @@ footer {
     display: block;
     max-width: 90%;
   }
+
   #testimonials p {
     color: #ffc600;
     font-size: 1.7rem;
@@ -915,10 +1042,12 @@ footer {
     margin: 40px 0 40px 0;
     text-align: center;
   }
+
   .profile-testimonial {
     display: flex;
     justify-content: center;
   }
+
   .emoji-girl,
   .emoji-man,
   .emoji-boy,
@@ -931,28 +1060,34 @@ footer {
     justify-content: center;
     width: 55%;
   }
+
   .profile-testimonial img {
     width: 3.1rem;
     height: 3.1rem;
     border-radius: 110px;
     margin: 10px;
   }
+
   .profile-testimonial div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+
   .profile-testimonial h4 {
     color: #7cc2ff;
     font-weight: 500;
   }
+
   .profile-testimonial h5 {
     color: white;
     font-weight: 400;
   }
 
+  
   /* PART 5 our service*/ /* ----------------------------------------------------------------------------- */
+
 
   #services {
     width: 80vw;
@@ -966,10 +1101,12 @@ footer {
     grid-row-gap: 44px;
     margin: 0 50px 0 50px;
   }
+
   .services-card {
     background-color: white;
     padding-bottom: 20px;
   }
+
   #services-card1 {
     background-image: url("../images/services-section/icons/1.svg");
     background-size: 46%;
@@ -981,6 +1118,7 @@ footer {
     border-radius: 100px;
     margin: 34px 0 0 34px;
   }
+
   #services-card2 {
     background-image: url("../images/services-section/icons/2.svg");
     background-size: 46%;
@@ -992,6 +1130,7 @@ footer {
     border-radius: 100px;
     margin: 34px 0 0 34px;
   }
+
   #services-card3 {
     background-image: url("../images/services-section/icons/3.svg");
     background-size: 46%;
@@ -1008,20 +1147,10 @@ footer {
     font-size: 1.3rem;
     margin: 27px;
   }
+
   .services-card p {
     font-size: 1.1rem;
     margin: 0 27px 27px 27px;
-  }
-
-  .services-card a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #072ac8;
-    margin: 0 27px 27px 27px;
-  }
-  .service-class a:hover {
-    font-weight: bold;
-    color: #282e4b;
   }
 
   /* PART6 subscribe */ /* ----------------------------------------------------------------------------- */
@@ -1037,22 +1166,27 @@ footer {
     background-color: #ffc600;
     align-items: center;
   }
+
   #subscribe h2 {
     text-align: center;
     font-size: 1.9rem;
   }
+
   #subscribe p {
     text-align: center;
     color: #61667f;
     margin: 1.2rem 0 3rem 0;
   }
+
   .email {
     width: 60%;
   }
+
   .email {
     display: flex;
     flex-direction: column;
   }
+
   #input-email {
     border: 0;
     height: 70px;
@@ -1065,6 +1199,7 @@ footer {
     background-color: white;
     padding-left: 50px;
   }
+
   #button-subscribe {
     background-color: #072ac8;
     color: white;
@@ -1075,8 +1210,8 @@ footer {
     text-decoration: none;
     margin: 0;
     border: none;
-    cursor: pointer;
   }
+
   #button-subscribe:hover {
     background-color: #292e47;
   }
@@ -1091,17 +1226,21 @@ footer {
     margin-top: 120px;
     margin-bottom: 120px;
   }
+
   .logo-address {
     text-align: center;
     margin-bottom: 30px;
   }
+
   #logo-footer {
     padding-bottom: 1rem;
   }
+
   #direction {
     font-weight: 300;
     padding-bottom: 1rem;
   }
+
   .links-footer {
     width: 60%;
     text-align: center;
@@ -1111,6 +1250,7 @@ footer {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
+
   .links-footer a {
     height: 25px;
     text-decoration: none;
@@ -1118,13 +1258,17 @@ footer {
     color: #072ac8;
   }
 }
+
+
 /* ------------------------------ Hamburguer menu ------------------------------ */
+
 
 @media (max-width: 766px) {
   .menu-button-container {
     display: flex;
     align-items: center;
   }
+
   .menu {
     position: absolute;
     top: 0;
@@ -1135,9 +1279,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .menu > li > a {
     background-color: #c2c1c2;
   }
+
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -1145,15 +1291,18 @@ footer {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
   #menu-toggle:checked ~ .menu li {
     height: 2.2em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
   .menu > li > a:hover {
-    color: #017aec;
+    color: #072ac8;
     transition: color 0.3s ease-in-out;
   }
+
   .menu > li {
     display: flex;
     justify-content: center;
@@ -1164,12 +1313,76 @@ footer {
     background-color: #c2c1c2;
   }
 }
-/* Your CSS code goes here */
+
 
 /* ------------------------------ Alert ------------------------------ */
 
-/* Your CSS code goes here */
+
+#success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #71c67d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
 
 /* ------------------------------ Sticky scroll bar ------------------------------ */
+@media (max-width: 766px){
+#loader {
+  width: 230px;
+  height: 230px;
+}
+}
 
 /* Your CSS code goes here */
+
+/* ------------------------------ CONTACT US MEDIA QUERY ------------------------------ */
+
+
+@media (max-width: 766px) {
+  .contact-us {
+    padding: 0 14px 0 14px;
+  }
+
+  .contact-us h1 {
+    font-size: 2rem;
+    color: #292e47;
+  }
+
+  .email-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .email-phone div {
+    width: 100%;
+  }
+}
+/* ------------------------------ PROJECTS MEDIA QUERY ------------------------------ */
+
+
+@media (max-width: 766px) {
+  .title-h2 {
+    margin-left: 30px;
+  }
+
+  .subtitle {
+    margin: 0px 30px 0px 30px;
+  }
+
+  #current-project {
+    margin: 0px 45px 0px 45px;
+  }
+
+  .text-project {
+    margin: 0px 45px 0px 45px;
+    text-align: justify left;
+  }
+}
