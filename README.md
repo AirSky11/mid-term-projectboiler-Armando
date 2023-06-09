@@ -44,11 +44,11 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
     <a href="#roadmap">Roadmap</a>
      <ul>
      <li><a href="#backlog">Back log</a></li>
-        <li><a href="#day-one">Lunes 23, Enero 2023</a></li>
-        <li><a href="#day-two">Martes 24, Enero 2023</a></li>
-        <li><a href="#day-three">Miercoles 25, Enero 2023</a></li>
-        <li><a href="#day-four">Jueves 26, Enero 2023</a></li>
-        <li><a href="#day-five">Viernes 27, Enero 2023</a></li>
+        <li><a href="#day-one">Martes 23, Mayo 2023</a></li>
+        <li><a href="#day-six">Domingo 28, Mayo 2023</a></li>
+        <li><a href="#day-ten">Jueves 1, Junio 2023</a></li>
+        <li><a href="#day-fourteen">Lunes 5, Junio 2023</a></li>
+        <li><a href="#day-nineteen">Viernes 9, Junio 2023</a></li>
       </ul>
     </li>
     <li><a href="#acerca">Acerca</a></li>
@@ -64,53 +64,32 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
+Proyecto con el objectivo de desarrollar una web de la empresa Circle, entre las peticiones que la empresa pidio destacan sus proyectos, contacto, subscripción, entre otros. 
 
-En esta sección se puede incluir información como:
+Las tecnologias usadas son HTML5, CSS3 y JavaScript.
 
-- Una descripción breve del proyecto y su propósito
-- Tecnologías utilizadas
-- Funcionalidades principales
-- Instrucciones de instalación y configuración
-- Enlaces a documentación adicional o recursos relacionados con el proyecto
-- Licencia del proyecto
-- Contribuciones de las personas en el proyecto.
+Entre los recursos usados estan perfiles de programadores en las redes como @midu.dev, @carlosazaustre, entre otros.
 
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
+El recurso mas usado "MDN Web Docs". 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
+- Lenguajes de progrmación: HTML5 - CSS - JAVASCRIPT
 
-En esta sección se puede incluir información como:
+- IDE: Visual Studio Code
 
-- Lenguajes de programación utilizados
-- Frameworks y bibliotecas utilizadas
-- Herramientas de desarrollo (IDE, control de versiones, etc)
-- Servicios en la nube utilizados (si corresponde)
-- Otros recursos o tecnologías relacionadas con el proyecto.
+- Control de versiones: GitHub Inc.
 
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
+- Servicios Cloud: Vercel
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
 
-#### Backlog
-
-- [ ] Ej - Tarea a completar y mover a su respectivo dia de ejecucion
-
-#### Day One
-
 #### Day One
 ###### Martes 23, Mayo 2023
-
-- [ ] Tarea no completada
-- [x] Tarea Completada
-- [ ] Ej - Crear section "projects" en html
-- [x] Ej - Crear section "projects" en html
 
 - [x] Crear index.html
       - [x] nav
@@ -141,86 +120,102 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 #### Day Three
 ###### Jueves 25, Mayo 2023
 
-- [x] Crear index.js
-      - [x]
-
-- [x] Crear contact.js
-      - [x]
-
-- [x] crear project.js
-      - [x]
-
 #### Day Four
 ###### Viernes 26, Mayo 2023
 
-- [] Crear style.css
-      - [] Style index.html
-            - [] nav
-            - [] header
-            - [] section brands
-            - [] section recent projects
-            - [] section our services
+- [x] Crear index.js
 
 #### Day Five
 ###### Sabado 27, Mayo 2023
 
-- [] Modificar style.css
-      - [] Style index.html
-            - [] section clients
-            - [] section questions
-            - [] footer
-      - [] Style project.html
-            - [] nav
-            - [] header
-            - [] section main
+- [x] Crear contact.js
 
 #### Day Six
 ###### Domingo 28, Mayo 2023
 
-- [] Modificar style.css
-      - [] Style project.html
-            - [] section other projects
-            - [] section question
-            - [] footer
+- [x] crear project.js
 
 #### Day Seven
 ###### Lunes 29, Mayo 2023
+
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] nav
+            - [x] header
 
 
 #### Day Eight
 ###### Martes 30, Mayo 2023
 
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] section brands
+            - [x] section recent projects
 
 #### Day Nine
-###### Miercoles 1, Mayo 2023
+###### Miercoles 31, Mayo 2023
 
+- [x] Crear style.css
+      - [x] Style index.html
+            - [x] section our services
 
 #### Day Ten
-###### Jueves 2, Mayo 2023
+###### Jueves 1, Junio 2023
 
+- [x] Modificar style.css
+      - [x] Style index.html
+            - [x] section clients
+            - [x] section questions
+            - [x] footer
 
 #### Day Eleven
-###### Viernes 3, Mayo 2023
+###### Viernes 2, Junio 2023
 
+- [x] Modificar style.css
+      - [] Style project.html
+            - [x] nav
+            - [x] header
+            - [x] section main
 
 #### Day Twelve
-###### Sabado 4, Mayo 2023
+###### Sabado 3, Junio 2023
 
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] section other projects
 
 #### Day thirteen
-###### Domingo 5, Mayo 2023
+###### Domingo 4, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] section question
 
 
 #### Day Fourteen
-###### Lunes 6, Mayo 2023
+###### Lunes 5, Junio 2023
+
+- [x] Modificar style.css
+      - [x] Style project.html
+            - [x] footer
 
 
 #### Day Fifteen
-###### Martes 7, Mayo 2023
+###### Martes 6, Junio 2023
 
+- [x] Crear loader.js
 
-#### Day Sixteen
-###### Miercoles 8, Mayo 2023
+#### Day Seventeen
+###### Miercoles 7, Junio 2023
+
+#### Day Eighteen
+###### Jueves 8, Junio 2023
+
+#### Day Nineteen
+###### Viernes 9, Junio 2023
+
+- [x] Crear README.md
+- [x] Crear presentación
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -229,67 +224,50 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 ## Acerca
 
-La sección "sobre mí" en un archivo README es una sección que proporciona información sobre el desarrollador o equipo detrás del proyecto.
+- Armando Eduardo Ayerbe Blackman
 
-En esta sección se puede incluir información como:
+- Ingeniero industrial con experiencia en el campo de mantenimiento y desarrollo de proyectos, las metas que tengo planificadas para este año es desarrollar esta habilidad de programación en FrontEnd, seguir practicando y afianzando conocimientos con ejercicios prácticos al finalizar el curso.
 
-- Nombre y datos de contacto del desarrollador o equipo.
-- Información sobre experiencia laboral o académica relacionada con el proyecto.
-- Enlaces a perfiles en redes sociales o sitios web personales.
-- Otra información relevante que el desarrollador o equipo desee compartir.
+Correo electrónico - [armando.ayerbe@gmail.com]()
 
-En resumen, la sección "sobre mí" es una excelente manera de brindar a los usuarios y contribuidores una idea de quién está detrás del proyecto y cómo pueden ponerse en contacto con ellos si tienen preguntas o comentarios. Es una buena manera de establecer una conexión con la comunidad de desarrolladores y una forma de mostrar la transparencia en el proyecto.
+Instagram - [@armandoa11](https://instagram.com/armandoa11?igshid=MzNlNGNkZWQ4Mg==)
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Project GitHub Link: [Mid-Term Project airsky11](https://github.com/AirSky11/mid-term-projectboiler-Armando)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Vercel Link: [Circle Agency Armando](https://mid-term-projectboiler-armando.vercel.app/)
 
-Presentation Link: [Insert here your presentation link](insert-link-here)
+Presentation Canvas Link: [Mid-Term Project Armando](https://www.canva.com/design/DAFlS_YjbX4/i3NmxllFkzZPdqzwjcuanQ/edit?utm_content=DAFlS_YjbX4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## agradecimientos
+## Agradecimientos
 
-La sección "agradecimientos" en un archivo README es una sección que proporciona reconocimiento a las personas o instituciones que ayudaron en el desarrollo del proyecto.
+- Mención a mi compañero Jesus Gil, donde afrontamos este proyecto juntos, apoyandonos entre nuestras fortalezas y debilidades del dominio de las herramientas para el desarrollo.
 
-En esta sección se puede incluir información como:
+- Gracias a la academia IRONHACK por los conocimientos adquiridos con el orden y programación de estos, sumado al convenio que elaboraron con Amazon, brindando la oportunidad de participar en este curso; sin dejar de lado a Diego Zito, que con sus intrucciones y buena aptitud ha podido impartir sus conocimientos a cada uno de sus alumnos.
 
-- Agradecimientos específicos a personas que ayudaron en el desarrollo del proyecto.
-- Agradecimientos a instituciones o organizaciones que proporcionaron apoyo financiero o recursos.
-- Enlaces a proyectos o recursos relacionados que fueron útiles para el desarrollo del proyecto.
-
-En resumen, la sección "agradecimientos" es una excelente manera de agradecer a las personas o instituciones que ayudaron en el desarrollo del proyecto. Esta sección también puede ser útil para dar crédito a los recursos o proyectos relacionados que fueron útiles durante el desarrollo.
+- Compañeros de clase que tambien han prestado su apoyo en especial a Facundo Del Médico y Emilio Carrasco, que al menos tuvieron que escucharme para poder llegar a respuestas por mi parte, aparte de levantarnos el ánimo y afrontar positivamente este reto.
 
 - [Icon Libraries](insert-link-here)
+
 - [Google Font Libraries](insert-link-here)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Desafío Técnico
 
-La sección "desafío técnico" aunque no es convencional en un proyecto profesional, en nuestro curso dependemos de esta sección en un archivo README para proporcionar información sobre los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto.
+- El más importante es el dominio de JAVASCRIPT, tengo mucho camino que recorrer con las herramientas y lógica que este lenguaje ofrece; tuve que rehacer código varias veces para poder desarrollar una correcta lógica y desarrollo.
 
-En esta sección se puede incluir información como:
+- HTML fue sencillo pero tambien tuvo su protagonismo al momento de colocar estilos, percatas la manera sencilla y editas para tener la solución menos complicada.
 
-- Problemas técnicos específicos que se encontraron durante el desarrollo del proyecto.
-- Soluciones implementadas para superar estos desafíos.
-- Aspectos del proyecto que aún son un desafío o que requieren mejora continua.
-- Recomendaciones para futuros desarrolladores que trabajen en el proyecto.
-
-En resumen, la sección "desafío técnico" es una excelente manera de brindar a los usuarios y contribuidores una idea de los desafíos técnicos que se enfrentaron durante el desarrollo del proyecto, y cómo se abordaron. Esta sección también puede ser útil para futuros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y soluciones para superarlos.
+- CSS tiene su rol protagonico por la cantidad de tiempo que conlleva cuando estas probando herramientas e implementandolas, fue un verdadero reto organizar (estilar) la página.
 
 ## Grande Error
 
-La sección "grande error" en un archivo README es una sección opcional que proporciona información sobre los errores importantes cometidos durante el desarrollo del proyecto.
+- Gestión del tiempo, fue fundamental, ha sido un reto porque cuando tenía planificado cierto tiempo para una actividad, he tenido que postergar otras porque no llegaba a soluciones en ese tiempo estimado.
 
-En esta sección se puede incluir información como:
+- Empezar el proyecto por la página web convencional y no haber seguido las intrucciones de Diego, que nos había asesorado de hacerlo por el MOBILE primero, pero el retrabajo ayudo asimilar mejor los conceptos de estilo.
 
-- Descripción detallada del error cometido.
-- Consecuencias del error.
-- Soluciones implementadas para corregir el error.
-- Lecciones aprendidas y recomendaciones para evitar errores similares en el futuro.
-
-En resumen, la sección "grande error" es una forma de ser transparente sobre los errores cometidos durante el desarrollo del proyecto. También puede ser útil para otros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y cómo se abordaron.
 # mid-term-projectboiler-Armando
